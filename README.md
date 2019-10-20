@@ -2,7 +2,7 @@
 DAI daddy is an autonomous, open-source platform for buying and selling Maker CDPs.
 <br/>
 
-![Logo](https://github.com/sbcodes/daidaddy/blob/master/dai%20daddy%20logo.png)
+![Logo](https://github.com/diffusioncon/Team-30/blob/master/logo_emoji.png)
 <br/>
 
 ## Links
