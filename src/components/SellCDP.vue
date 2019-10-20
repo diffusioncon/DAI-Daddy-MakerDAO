@@ -65,7 +65,7 @@
             <h4 style="font-weight: 900;">Discount</h4>
           </a-col>
           <a-col :span="3">
-            <h4 class="PinkText" style="font-weight: 900;">You'll get</h4>
+            <h4 class="PinkText" style="font-weight: 900; padding-top:10px;">You'll get</h4>
           </a-col>
           <a-col :span="5" style="text-align:center">
             <h4 style="font-weight: 900;"></h4>
@@ -110,7 +110,7 @@
     </div>
     <a-modal
       class="model"
-      :height="500"
+      :height="400"
       :width="900"
       style="width:900px"
       v-model="visible"
@@ -133,7 +133,7 @@
           >Sell CDP</a-button>
         </div>
       </template>
-      <h2 style="padding-bottom:25px">Sell CDP</h2>
+      <h2 style="padding-bottom:25px; font-weight:900;">Sell CDP</h2>
       <a-row>
         <a-col :span="16">
           <h3 style="font-weight: 900;">Select</h3>
@@ -142,7 +142,7 @@
               <h4 style="font-weight: 900;"></h4>
             </a-col>
             <a-col :span="5">
-              <h4 style="font-weight: 900; padding-left:15px">CDP #</h4>
+              <h4 style="font-weight: 900">CDP #</h4>
             </a-col>
             <a-col :span="5">
               <h4 style="font-weight: 900;">Total Debt</h4>
@@ -151,7 +151,7 @@
               <h4 style="font-weight: 900;">Collateral/Ratio</h4>
             </a-col>
             <a-col :span="4">
-              <h4 style="font-weight: 900;">CDP Value</h4>
+              <h4 class="PinkText" style="font-weight: 900;">CDP Value</h4>
             </a-col>
           </a-row>
           <hr style="padding:0px; margin:0px" />
@@ -175,7 +175,7 @@
                   <h4>{{cdp.collateralRatio}}</h4>
                 </a-col>
                 <a-col style="padding-top:5px" :span="4">
-                  <h4>{{cdp.value}} ETH</h4>
+                  <h4 class="PinkText">{{cdp.value}} ETH</h4>
                 </a-col>
               </a-row>
             </div>
@@ -205,6 +205,7 @@
           >{{myCdps[debtOrder.debtIndex].value * (100-debtOrder.discount)/100}} ETH</h3>
         </a-col>
       </a-row>
+      <p style="padding-top:20px">Once you've listed your CDP for sale it will be transfered to the DaiDaddy contract where it will be held in escrow until someone buys it. At any point in time up to when it is bought you can cancel the sale. As soon as someone buys it the funds will automatically get transferred to your wallet.</p>
     </a-modal>
   </div>
 </template>
@@ -309,6 +310,10 @@ export default {
   padding: 25px;
 }
 
+.modal {
+  font-family: "Nunito" !important;
+}
+
 .BuyButton {
   background: #ff95cd;
   border: green;
@@ -336,7 +341,7 @@ export default {
 .verticalLine {
   border-right-style: solid;
   border-width: thin;
-  height: 400px;
+  height: 200px;
   padding-left: 25px;
   width: 1px;
 }
