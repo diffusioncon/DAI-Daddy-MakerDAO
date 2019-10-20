@@ -86,7 +86,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   // text-align: center;
   color: #2c3e50;
-  background-image: linear-gradient(#ff94ce, 10%, #fff);
+  background-image: linear-gradient(#ff94ce, 30%, #fff);
 }
 
 #nav {
